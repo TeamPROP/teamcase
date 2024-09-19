@@ -24,3 +24,39 @@ window.onclick = function (event) {
     });
   }
 };
+
+// Javascript for category page
+
+const url = "https://vutyazyqgdnzvjqyebuo.supabase.co/rest/v1/TSL?select=category";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1dHlhenlxZ2RuenZqcXllYnVvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjYxMjUwNzIsImV4cCI6MjA0MTcwMTA3Mn0.pAvWKCspPRTv9gk0lUIgk_vkYL_pPLV-wofqAW8NmUU";
+const options = {
+  headers: {
+    apikey: key,
+  },
+};
+
+fetch(url, options)
+  .then((res) => res.json())
+  .then(showCategories);
+
+function showCategories(cats) {
+  const uniqueCategories = new Set(); // To track unique categories
+
+  cats.forEach((cat) => {
+    if (!uniqueCategories.has(cat.category)) {
+      uniqueCategories.add(cat.category); // Add to set
+      showCategory(cat); // Display only if not already in set
+    }
+  });
+}
+
+function showCategory(cat) {
+  // Grab Template
+  const template = document.querySelector("template").content;
+  // Clone
+  const clone = template.cloneNode(true);
+  // Change content
+  clone.querySelector("a").textContent = cat.category;
+  // Append
+  document.querySelector(".dropdown-content a").appendChild(clone);
+}
