@@ -56,7 +56,7 @@ function showCategory(cat) {
   // Clone
   const clone = template.cloneNode(true);
   // Change content
-  clone.querySelector("a").textContent = cat.category;
+  clone.querySelector("a").href = "html/productlist.html?category=$(cat.category)";
   // Append
   document.querySelector(".dropdown-content a").appendChild(clone);
 }
