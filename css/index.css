@@ -353,3 +353,150 @@ button {
     background-color: #ea5054;
   }
 }
+/* Styling for the footer */
+
+footer {
+  width: 100%;
+
+  height: auto;
+
+  background-color: #263247;
+
+  padding: 20px;
+}
+
+footer h1 {
+  font-family: "Roboto Condensed", sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #fff;
+
+  display: block;
+
+  padding-top: 20px;
+
+  padding-bottom: 10px;
+}
+
+footer h2 {
+  font-family: "Roboto Condensed", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  color: #fff;
+
+  display: block;
+
+  padding-top: 30px;
+
+  padding-bottom: 30px;
+}
+
+footer p {
+  font-family: "Roboto Condensed", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  color: #fff;
+
+  display: block;
+
+  padding-top: 5px;
+}
+
+footer p:hover {
+  color: #ea5045;
+}
+
+footer img {
+  width: 60%;
+}
+
+.footer-container {
+  width: 80%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+
+  margin: 0 auto;
+}
+
+.footer-column {
+  padding: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  margin-right: 5%;
+}
+
+footer li {
+  float: right;
+}
+
+footer li a {
+  font-family: "Orbitron", sans-serif;
+
+  font-size: 0.7em;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  display: block;
+
+  color: #fff;
+
+  padding-left: 50px;
+
+  padding-top: 46px;
+
+  text-decoration: none;
+}
+
+footer .row {
+  width: 170px;
+
+  display: flex;
+
+  padding-top: 25px;
+
+  padding-bottom: 25px;
+}
+
+/* Create three equal columns that sits next to each other */
+
+footer .column {
+  flex: 33.33%;
+
+  padding: 3px;
+}
+
+footer .row:ahover {
+  color: #ea5045;
+}
+
+/* Media query for screens 768px or less */
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+  }
+}
