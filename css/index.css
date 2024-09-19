@@ -2,3 +2,354 @@ img {
   max-width: 100%;
   padding-top: 10px;
 }
+
+.logosmall {
+  display: none;
+}
+
+.greyline .orange a {
+  color: #ea5054;
+}
+
+.logomain {
+  margin-right: auto;
+}
+
+.listmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listmenu a {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.greyline {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c8d0d8;
+}
+
+.greyline a {
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #233249;
+}
+
+.topnav {
+  display: none;
+}
+
+header {
+  background-color: #233249;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: flex-start;
+}
+header .brand {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #ea5054;
+}
+
+header img {
+  width: 120px;
+  height: 40px;
+}
+
+header .utilities {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+header .utilities .language {
+  background-color: white;
+}
+header .utilities .language a {
+  color: #ea5054;
+  text-decoration: none;
+  padding: 0px 20px 0 20px;
+}
+header .utilities .searchBar a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px 0 20px;
+}
+header .utilities .searchBar {
+  background-color: #ea5054;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.boks {
+  padding: 10rem;
+}
+
+.overskrift {
+  margin-left: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+.overskrift h3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tekst {
+  display: flex;
+  color: #233249;
+  margin: 0 10rem 0 10rem;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.pinkboks {
+  background-color: #e782a9;
+  width: 360px;
+  padding: 1.5rem;
+}
+
+.pinkboks h2 {
+  margin-bottom: 1rem;
+}
+
+.dropbtn {
+  background-color: #ea5054;
+  color: white;
+  padding: 16px 140px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+button {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #dddddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #b93f43;
+}
+
+@media (max-width: 600px) {
+  .tekst {
+    margin: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .overskrift {
+    color: #233249;
+    margin: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .pinkboks {
+    display: none;
+    background-color: #e782a9;
+    width: 360px;
+    padding: 1.5rem;
+  }
+
+  .pinkboks h2 {
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dropbtn {
+    background-color: #ea5054;
+    color: white;
+    padding: 16px 18px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  button {
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* FILL WITH MOBILE STYLING */
+  .greyline {
+    display: none;
+  }
+
+  .listmenu {
+    display: none;
+  }
+
+  .logosmall {
+    display: block;
+  }
+
+  .logomain {
+    display: none;
+  }
+
+  /* HAMBURGER MENU */
+  /* Style the navigation menu */
+  .topnav {
+    position: relative;
+    display: block;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  header {
+    background-color: #233249;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-end;
+  }
+  header .brand {
+    padding: 0 50px 0 15px;
+    display: flex;
+    align-items: center;
+    background-color: #233249;
+  }
+
+  header img {
+    width: 80px;
+    height: 20px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 120px;
+    background-color: #233249;
+  }
+
+  header .utilities {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+
+  header .utilities .language {
+    background-color: white;
+  }
+  header .utilities .language a {
+    color: #ea5054;
+    text-decoration: none;
+    padding: 0px 20px 0 20px;
+  }
+  header .utilities .searchBar a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px 0 20px;
+  }
+  header .utilities .searchBar {
+    background-color: #ea5054;
+  }
+}
